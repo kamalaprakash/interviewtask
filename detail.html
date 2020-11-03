@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./task.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="./task.js"></script>
+</head>
+
+
+<body>
+
+  <div class="col-xs-6 center-align">
+    <h3> Local storage</h3>
+    <p>Your enter email :<span id="emailState"> </span></p>
+    <p>Your enter Phone Number :<span id="numberState"> </span></p>
+    <form action="#">
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="number">Phone Number:</label>
+        <input type="text" class="form-control" id="number" maxlength="10">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-default" onclick="Storelocal()">Submit</button>
+    </form>
+    <a class="active" href="./task.html">Back to Home page</a>
+  </div>
+  <div class=" col-xs-6 center-align">
+    <h3>Image Search</h3>
+    <p> Search image relavant name like boy, girl,flower</p>
+    <input type="text" id="imgSearch">
+    <button onclick="imgSearch()">Search</button>
+    <button onclick="clearImgSearch()"> Clear Search</button>
+    <div class="imgGallery">
+      <img src="image/image1.jpg" id="image1" width="200" height="200" alt="boy">
+      <img src="image/image2.jpg" id="image2" width="200" height="200" alt="girl">
+      <img src="image/image3.jpg" id="image3" width="200" height="200" alt="flower">
+    </div>
+  </div>
+</body>
+
+</html>
